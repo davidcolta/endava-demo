@@ -2,7 +2,6 @@ package com.endava.endava.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -14,7 +13,6 @@ import javax.validation.constraints.*;
 @ToString
 @Table(name = "students")
 public class Student {
-
     public enum Faculty {
         Engineering,
         Law,
@@ -90,6 +88,7 @@ public class Student {
     public String getAddress() {
         return address;
     }
+
     public void setAddress(String address) {
         this.address = address;
     }
